@@ -14,8 +14,9 @@ public class RFC865UDPClient {
 
             // Specify the server address and port (localhost and port 13 in this case)
             // InetAddress serverAddress = InetAddress.getByName("localhost");  //alternative        
-            InetAddress localhost = InetAddress.getLocalHost();
-            InetAddress serverAddress = localhost;
+            // InetAddress localhost = InetAddress.getLocalHost();
+            InetAddress LAB_IP = InetAddress.getByName("swlab2-c.scse.ntu.edu.sg");
+            InetAddress serverAddress = LAB_IP;
             int serverPort = 13;
 
             // Create a request message (empty in this case)
